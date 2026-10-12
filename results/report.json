@@ -1,0 +1,117 @@
+{
+  "scenario_count": 6,
+  "objectives_minimized": [
+    "annual_cost_yuan",
+    "annual_emissions_kgco2e",
+    "comfort_penalty_points"
+  ],
+  "frontier_scenario_ids": [
+    "efficient",
+    "cleaner-grid",
+    "mixed",
+    "balanced"
+  ],
+  "dominated_by": {
+    "baseline": [
+      "balanced"
+    ],
+    "efficient": [],
+    "cleaner-grid": [],
+    "mixed": [],
+    "comfort-first": [
+      "baseline",
+      "balanced"
+    ],
+    "balanced": []
+  },
+  "frontier": [
+    {
+      "scenario_id": "efficient",
+      "description": "节能设备假设",
+      "annual_energy_kwh": 10000.0,
+      "annual_cost_yuan": 7700.0,
+      "annual_emissions_kgco2e": 5360.0,
+      "comfort_penalty_points": 1.0
+    },
+    {
+      "scenario_id": "cleaner-grid",
+      "description": "低碳电力假设",
+      "annual_energy_kwh": 11800.0,
+      "annual_cost_yuan": 9650.0,
+      "annual_emissions_kgco2e": 3304.0,
+      "comfort_penalty_points": 0.0
+    },
+    {
+      "scenario_id": "mixed",
+      "description": "组合假设",
+      "annual_energy_kwh": 10500.0,
+      "annual_cost_yuan": 8070.0,
+      "annual_emissions_kgco2e": 3675.0,
+      "comfort_penalty_points": 2.0
+    },
+    {
+      "scenario_id": "balanced",
+      "description": "均衡假设",
+      "annual_energy_kwh": 10800.0,
+      "annual_cost_yuan": 7876.0,
+      "annual_emissions_kgco2e": 4320.0,
+      "comfort_penalty_points": 0.0
+    }
+  ],
+  "all_scenarios": [
+    {
+      "scenario_id": "baseline",
+      "description": "参考情景",
+      "annual_energy_kwh": 12000.0,
+      "annual_cost_yuan": 8640.0,
+      "annual_emissions_kgco2e": 6432.0,
+      "comfort_penalty_points": 0.0
+    },
+    {
+      "scenario_id": "efficient",
+      "description": "节能设备假设",
+      "annual_energy_kwh": 10000.0,
+      "annual_cost_yuan": 7700.0,
+      "annual_emissions_kgco2e": 5360.0,
+      "comfort_penalty_points": 1.0
+    },
+    {
+      "scenario_id": "cleaner-grid",
+      "description": "低碳电力假设",
+      "annual_energy_kwh": 11800.0,
+      "annual_cost_yuan": 9650.0,
+      "annual_emissions_kgco2e": 3304.0,
+      "comfort_penalty_points": 0.0
+    },
+    {
+      "scenario_id": "mixed",
+      "description": "组合假设",
+      "annual_energy_kwh": 10500.0,
+      "annual_cost_yuan": 8070.0,
+      "annual_emissions_kgco2e": 3675.0,
+      "comfort_penalty_points": 2.0
+    },
+    {
+      "scenario_id": "comfort-first",
+      "description": "舒适优先对照",
+      "annual_energy_kwh": 12500.0,
+      "annual_cost_yuan": 9000.0,
+      "annual_emissions_kgco2e": 6700.0,
+      "comfort_penalty_points": 0.0
+    },
+    {
+      "scenario_id": "balanced",
+      "description": "均衡假设",
+      "annual_energy_kwh": 10800.0,
+      "annual_cost_yuan": 7876.0,
+      "annual_emissions_kgco2e": 4320.0,
+      "comfort_penalty_points": 0.0
+    }
+  ],
+  "assumptions": {
+    "emission_factors": "scenario inputs are illustrative placeholders and require source/year documentation",
+    "comfort_penalty": "fictional relative points; lower is treated as better for comparison",
+    "cost": "annual_energy_kwh * price_yuan_per_kwh + annualized_extra_cost_yuan"
+  },
+  "limitations": "Frontier shows trade-offs in supplied assumptions; it does not choose or control an option."
+}

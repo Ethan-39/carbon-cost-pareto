@@ -1,0 +1,7 @@
+scenario_id,description,annual_energy_kwh,annual_cost_yuan,annual_emissions_kgco2e,comfort_penalty_points
+baseline,参考情景,12000.0,8640.0,6432.0,0.0
+efficient,节能设备假设,10000.0,7700.0,5360.0,1.0
+cleaner-grid,低碳电力假设,11800.0,9650.0,3304.0,0.0
+mixed,组合假设,10500.0,8070.0,3675.0,2.0
+comfort-first,舒适优先对照,12500.0,9000.0,6700.0,0.0
+balanced,均衡假设,10800.0,7876.0,4320.0,0.0
